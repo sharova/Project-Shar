@@ -200,5 +200,14 @@ h2.text-center:before {
 /*Факты*/
 /*Комнда инструкторов*/
 /*Отзывы*/
+.name {
+  font-size: 22px;
+  color: #353535;
+}
+.feedback-text {
+  font-size: 17px;
+  line-height: 22px;
+  color: #353535;
+  margin: 0 20px;
 /*Контакты*/
 /*Подвал*/
