@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
    <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/owl.carousel.css">
-   <link rel="stylesheet" href="css/owl.theme.css">
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+
 
   <title>Document</title>
 </head>
@@ -112,7 +112,7 @@
       <div class="column12">  
         <h2 class="text-center">Галерея</h2>
 
-        <div id="owl-demo" class="owl-carousel owl-theme">
+        <div id="owl-demo" class="owl-carousel slider">
           <div> <img src="img/slide1.jpg" class="slide" alt=""></div>
           <div> <img src="img/slide2.jpg" class="slide" alt=""> </div>
           <div> <img src="img/slide3.jpg" class="slide" alt=""> </div>
@@ -140,11 +140,11 @@
   <div class="container">
      <div class="row">
   
-      <div class="column2 text-left"><span>Взлет</span></div>
-      <div class="column3 text-center"><span>Набираем высоту</span></div>
-      <div class="column2 text-center"><span>Летаем</span></div>
-      <div class="column3 text-center"><span>Снижаемся </span></div>
-      <div class="column2 text-right"><span>Садимся</span></div>
+      <div class="column2 text-left"><span class="baloon b1"></span><span class="bal-text bt1">Взлет</span></div>
+      <div class="column3 text-center"><span class="baloon b2"></span><span class="bal-text bt2">Набираем высоту</span></div>
+      <div class="column2 text-center"><span class="baloon b3"></span><span class="bal-text bt3">Летаем</span></div>
+      <div class="column3 text-center"><span class="baloon b4"></span><span class="bal-text bt4">Снижаемся </span></div>
+      <div class="column2 text-right"><span class="baloon b5"></span><span class="bal-text bt5">Садимся</span></div>
      
     </div>
   </div>
@@ -170,15 +170,41 @@
   <div class="container">
      <div class="row">
 
-       <div class="column6">
+       <div class="column5">
        <h2>Рассчитать стоимость</h2>
-       <p>Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
-       <p>Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох». </p>
-       <p>Выбирайте, куда мы полетим сегодня!</p>
+       <p class="text-g">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
+       <p class="text-g">Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох». </p>
+       <p class="text-g">Выбирайте, куда мы полетим сегодня!</p>
        </div>
       
-       <div class="column6">  
-       <form action="">  </form>
+      <!-- Форма -->
+
+       <div class="column7">  
+       <form>  
+          <p class="form-row">Маршрут полёта: <select name="" id="">
+        <ul>
+          <option><li>Сестрорецк-Парнас</li>
+          <option><li>Изумрудый город</li>
+          <option><li>Окно в Европу</li>
+          <option><li>В Тамбов</li>
+          <option><li>В Лондон на пмж</li>
+        </ul>
+        </select></p>
+
+          <p class="form-row">Количество человек: <select name="" id="">
+        <ul>
+          <option><li>2</li>
+          <option><li>3</li>
+          <option><li>Кто больше</li>
+          <option><li>7 гномов</li>
+          <option><li>33 богатыря</li>
+        </ul>
+        </select></p>
+          <p class="form-row">Имя и фамилия: <input type="text"> </p>
+          <p class="form-row">Телефон: <input type="text"></p>
+          <p class="form-row">Стоимость: 9000 Р <input type="submit" value="Полетели!"></p>
+
+       </form>
        </div>
 
      </div>
@@ -195,34 +221,36 @@
         <h2>Способы оплаты</h2>
         
         <h3>Наличными</h3>
-        <p>Вы можете оплатить услугу,  приехав к нам в офис. Для этого Вам необходимо предупредить об этом:</p>
+        <p class="text-g">Вы можете оплатить услугу,  приехав к нам в офис. Для этого Вам необходимо предупредить об этом:</p>
 
-        <p>— по телефону: +7 (812) 640-19-39</p>
-        <p>— или по почте: mnebyvnebo@gmail.com</p>
+        <p class="text-g no-marg">— по телефону: +7 (812) 640-19-39</p>
+        <p class="text-g no-marg">— или по почте: mnebyvnebo@gmail.com</p>
 
-        <p>Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.</p>
+        <p class="text-g">Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.</p>
 
-        <h2>Курьеру</h2>
-        <p>Вы можете оплатить услугу в любом районе города и в удобное время, вызвав курьера. Для этого Вам необходимо связаться с нашими сотрудниками и сообщить об этом:</p>
+        <h3>Курьеру</h3>
+        <p class="text-g">Вы можете оплатить услугу в любом районе города и в удобное время, вызвав курьера. Для этого Вам необходимо связаться с нашими сотрудниками и сообщить об этом:</p>
 
-        <p>— по телефону: +7 (812) 640-19-39,</p>
-        <p>— или по почте: mnebyvnebo@gmail.com</p>
+        <p class="text-g no-marg">— по телефону: +7 (812) 640-19-39,</p>
+        <p class="text-g no-marg">— или по почте: mnebyvnebo@gmail.com</p>
 
-        <p>Оплачивая услугу курьером, Вы получаете все документы подтверждающие оплату.</p>
+        <p class="text-g">Оплачивая услугу курьером, Вы получаете все документы подтверждающие оплату.</p>
       </div>
 
 <!-- Частые вопросы -->
 
       <div class="column6">
       <h2>Частые вопросы</h2>
-        <h4>Что взять с собой в полет?</h4>
-        <p>Обязательно возьмите с собой теплую одежду и немного вкусной еды, которую не нужно разогревать, а еще термос горячим чаем. А мы обязательно дадим вам теплые пледы</p>
-        <h4>Что если мы улетим не в ту сторону?</h4>
-        <p>Каждый шар оснащен датчиками GPS, и все его перемещения фиксируются с точностью до метра, потеряться просто не получится. А наши пилоты такой ситуации не допустят вообще</p>
-        <h4>Что делать, если в полете станет плохо?</h4>
-        <p>В наших аптечках заготовлены в больших количествах разные лекарства, в том числе средства от укачивания, пакетики, а каждый пилот прошел специальную подготовку по оказанию первой помощи. В экстренной ситуациях сразу же совершим посадку. Мы не дадим вам оказаться в беде</p>
-        <h4>А полет - это действительно так здорово?</h4>
-        <p>Это в тысячу раз лучше шоколада</p>
+      <div class="ask">
+        <span class="question"></span><h4>Что взять с собой в полет?</h4>
+        <p class="text-gs">Обязательно возьмите с собой теплую одежду и немного вкусной еды, которую не нужно разогревать, а еще термос горячим чаем. А мы обязательно дадим вам теплые пледы</p>
+        <span class="question"></span><h4>Что если мы улетим не в ту сторону?</h4>
+        <p class="text-gs">Каждый шар оснащен датчиками GPS, и все его перемещения фиксируются с точностью до метра, потеряться просто не получится. А наши пилоты такой ситуации не допустят вообще</p>
+        <span class="question"></span><h4>Что делать, если в полете станет плохо?</h4>
+        <p class="text-gs">В наших аптечках заготовлены в больших количествах разные лекарства, в том числе средства от укачивания, пакетики, а каждый пилот прошел специальную подготовку по оказанию первой помощи. В экстренной ситуациях сразу же совершим посадку. Мы не дадим вам оказаться в беде</p>
+        <span class="question"></span><h4>А полет - это действительно так здорово?</h4>
+        <p class="text-gs">Это в тысячу раз лучше шоколада</p>
+      </div>
       </div>
 
     </div>
@@ -294,18 +322,18 @@
 
 <div class="feedback">
   <div class="container">
+     <h2 class="text-center"> Отзывы</h2>
      <div class="row">
-      <h2 class="text-center"> Отзывы</h2>
-  
-      <div class="column6 text-center">
-        <img src="" alt="" srs="http://placehold.it/100x100">
+      
+      <div class="column6 text-center fb-block">
+        <img srs="img/otziv-1.jpg" alt=""  class="otziv">
         <p class="name">Ольга Алексеева</p>
         <p class="feedback-text">
           Оооо это было чудесно!!! Я не знала что воздушные шары такие огромные. Забавно, большой шар и маленькая корзинка. Полет восхитительный, выше всяких похвал. Мы побывали в самом красивом месте на Земле - в небе, оттуда открываются потрясающие виды.
         </p>
       </div>
       <div class="column6 text-center">
-        <img src="" alt="" srs="http://placehold.it/100x100">
+        <img srs="img/otziv-2.png" alt=""  class="otziv">
         <p class="name">Артем Рыбкин</p>
         <p class="feedback-text">
           Жене подарил полет на воздушном шаре. Сделал сюрприз на день рождения. Жена была в восторге, мне и самому понравилось, очень необычные ощущения от полета, хоть не самолет, а летит быстро, маршрут подобрали красивый. Cпасибо вам, нам все понравилось.

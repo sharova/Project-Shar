@@ -1,4 +1,4 @@
-/*Настройки*/
+Настройки*/
 
 . {
   margin: 0;
@@ -39,7 +39,7 @@ ul.list-inline>li{display: inline-block;} .inline {display: inline}
 .container{ width: 1200px; margin: 0 auto;}
 
 body {
-  min-width: 1600px;
+  min-width: 1200px;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;}
 
@@ -189,17 +189,105 @@ h2.text-center:before {
   -webkit-background-size: cover;
   background-size: cover;
   position: relative;
+  margin-top: 50px;
 }
 
 .flying-title {height: 120px;}
+.baloon {
+  background-image: url(../img/sprites.png);
+  width: 44px;
+  height: 65px;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: inline-block; 
+  background-position: 0 0;
+  margin: 30px auto;
+}
+.bal-text {
+  color: #454545;
+  font-size: 18px;
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+}
+.b1, .bt1, .b5, .bt5 {top: 200px; }
+.b2, .bt4, .b4 {top: 100px; }
+.b3, .bt3 {top: -50px;}
+.bt2 {top: 80px;}
+
+.b1:before, .b2:before, .b3:before, .b4:before, .b5:before {
+ position: absolute;
+ color: #fff;
+font-size: 20px;
+top: 10px;
+left: 15px;
+}
+.b1:before { content: '1';}
+.b2:before { content: '2';}
+.b3:before { content: '3';}
+.b4:before { content: '4';}
+.b5:before { content: '5';}
+
+
 /*Таймер*/
 /*Рассчитать стоимость*/
+
+.text-g {
+  font-size: 17px;
+  color: #444;
+  line-height: 22px;
+  margin-bottom: 24px;
+}
+.no-marg {
+  margin: 0;
+}
 /*Способ оплаты*/
+
+h3 {
+  font-size: 26px;
+  color: #444;
+  margin-bottom: 40px;
+}
+/*Форма*/
+
+
+
 /*Частые вопросы*/
+.text-gs {
+  font-size: 16px;
+  color: #444;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 16px;
+  color: #444;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 20px 0 20px 0;
+}
+
+.ask {padding-left: 60px;
+position: relative;}
+
+.question {
+  background-image: url(../img/sprites.png);
+  width: 40px;
+  height: 34px;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: inline-block; 
+  background-position: -125px 0;
+  left: 0px;
+}
+
+
 
 /*Факты*/
 /*Комнда инструкторов*/
 /*Отзывы*/
+
+.fb-block {overflow: hidden;}
 .name {
   font-size: 22px;
   color: #353535;
@@ -208,6 +296,12 @@ h2.text-center:before {
   font-size: 17px;
   line-height: 22px;
   color: #353535;
-  margin: 0 20px;
+  margin: 0 20px;}
+
+  .otziv {
+    border-radius: ;
+    width: 98px;
+    height: 98px;
+  }
 /*Контакты*/
-/*Подвал*/
+/*Подвал
