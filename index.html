@@ -7,8 +7,7 @@
   <script src="js/jquery.js"></script>
   <script src="js/jquery.plugin.js"></script>
   <script src="js/jquery.countdown.js"></script>
-  <script src="js/jquery.countdown-ru.js"></script>\
-
+  <script src="js/jquery.countdown-ru.js"></script>
 
   <title>Mongolfierkin</title>
 </head>
@@ -30,12 +29,12 @@
 
     <div class="column9">
       <ul class="list-inline text-right">
-        <li><a href="" class="top-link">Кто мы</a></li>
-        <li><a href="" class="top-link">Фотографии</a></li>
-        <li><a href="" class="top-link">План полета</a></li>
-        <li><a href="" class="top-link">Заказать</a></li>
-        <li><a href="" class="top-link">Команда</a></li>
-        <li><a href="" class="top-link">Контакты</a></li>
+        <li><a href="#more" class="top-link">Кто мы</a></li>
+        <li><a href="#photos" class="top-link">Фотографии</a></li>
+        <li><a href="#plan" class="top-link">План полета</a></li>
+        <li><a href="#order" class="top-link">Заказать</a></li>
+        <li><a href="#team" class="top-link">Команда</a></li>
+        <li><a href="#info" class="top-link">Контакты</a></li>
       </ul>
     </div>
 
@@ -108,7 +107,7 @@
 <div class="gallery">
   <div class="container">
    <div class="row">
-     
+     <a name="photos"></a>
       <div class="column12">  
         <h2 class="text-center">Галерея</h2>
 
@@ -131,6 +130,7 @@
 <!-- Как проходят полёты -->
 <div class="flying-title">
   <div class="container">
+  <a name="plan"></a>
     <div class="column12"> 
      <h2 class="text-center">Как проходят полёты</h2>
     </div>
@@ -210,31 +210,32 @@
        </div>
       
       <!-- Форма -->
-
+        <a name="order"></a>
        <div class="column7">  
        <form>  
 
         <p class="form-row text-g">Маршрут полёта: 
-          <select name="" class="form-item" id="">
-              <ul>
-                <option><li>Сестрорецк-Парнас</li>
-                <option><li>Изумрудый город</li>
-                <option><li>Финский шоппинг</li>
-                <option><li>Тамбов-Тартарары</li>
-                <option><li>Северный полюс</li>
-              </ul>
-        </select></p>
+    
+ <select name="" class="form-item" >
+              
+            <option>Сестрорецк-Парнас</option>
+            <option>Изумрудый город</option>
+            <option>Финский шоппинг</option>
+            <option>Тамбов-Тартарары</option>
+            <option>Северный полюс</option>
+              
+        </select>
 
-        <p class="form-row text-g">Количество человек: 
+  <p class="form-row text-g">Количество человек: 
           <select name="" class="form-item" id="">
-              <ul>
-                <option><li>2 сапога пара</li>
-                <option><li>3 поросенка</li>
-                <option><li>Кто больше</li>
-                <option><li>7 гномов</li>
-                <option><li>33 богатыря</li>
-              </ul>
-        </select></p>
+                <option>2 сапога пара</option>
+                <option>3 поросенка</option>
+                <option>Кто больше</option>
+                <option>7 гномов</option>
+                <option>33 богатыря</option>
+        </select>
+        </p>
+
         <p class="form-row text-g"><span class="name-icon"></span>Имя и фамилия: <input type="text" class="form-item"> </p>
 
         <p class="form-row text-g">Телефон: <input type="text" class="form-item"></p>
@@ -330,6 +331,7 @@
 <!-- Команда инструкторов -->
 
 <div class="team">
+<a name="team"></a>
   <div class="container">
      <div class="row">
       <h2 class="text-center"> Команда инструкторов</h2>
@@ -389,7 +391,7 @@
 
 <div class="contacts">
   <div class="container">
-     
+     <a name="info"></a>
 
       <p class="cont-title text-center">Запишите адрес аэропорта</p>
       <p class="cont-info text-center">Всеволожск, улица Аэродромная 19а</p>
@@ -428,22 +430,22 @@
   <footer>
     
     <div class="row">
-   <div class="container">
+     <div class="container">
      
-     <div class="column3">
-    <a href="#" class="logo">Монгольфьеркин и КО</a>
-    </div>
+       <div class="column3">
+           <a href="#" class="logo">Монгольфьеркин и КО</a>
+       </div>
 
     <div class="column9">
       <ul class="list-inline text-right">
-        <li><a href="" class="top-link top-link-active">Кто мы</a></li>
-        <li><a href="" class="top-link">Фотографии</a></li>
-        <li><a href="" class="top-link">План полета</a></li>
-        <li><a href="" class="top-link">Заказать</a></li>
-        <li><a href="" class="top-link">Команда</a></li>
-        <li><a href="" class="top-link">Контакты</a></li>
-        <li><a href="#" class="foot-nav"></a>
+       <li><a href="#more" class="top-link">Кто мы</a></li>
+        <li><a href="#photos" class="top-link">Фотографии</a></li>
+        <li><a href="#plan" class="top-link">План полета</a></li>
+        <li><a href="#order" class="top-link">Заказать</a></li>
+        <li><a href="#team" class="top-link">Команда</a></li>
+        <li><a href="#info" class="top-link">Контакты</a></li>
       </ul>
+      
     </div>
   </div>
 </div>
@@ -453,6 +455,19 @@
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/script.js"></script>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+<script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+<script type="text/javascript">
+$('select').select2({minimumResultsForSearch: Infinity});
+</script>
+<script>
+$('.select2-container').css('height','40px');
+$('.select2-selection__rendered ').css('line-height','40px');
+$('.select2-container--default .select2-selection--single .select2-selection__arrow b').css('top', '67%');
+$('.select2-selection--single').css('outline','none');
+$('.select2-selection--single').css('height','40px'); 
+$('.form-item').css('outline','none');
+</script>
 
 </body>
 </html>

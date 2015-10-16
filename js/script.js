@@ -16,3 +16,4 @@ $(function () {
     // console.log(austDay);
     $('#defaultCountdown').countdown({until: austDay, padZeroes: true});
   });
+

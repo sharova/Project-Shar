@@ -1,9 +1,4 @@
-Настройки*/
-
-. {
-  margin: 0;
-  padding: 0;
-}
+/*Настройки*/
 
 .column1 {  width: 8.33%;  }
 .column2 {  width: 16.66%;  }
@@ -36,10 +31,10 @@ div[class*="column"] {
 ul.list-inline{padding:0; margin:0}
 ul.list-inline>li{display: inline-block;} .inline {display: inline}
 
-.container{ width: 1200px; margin: 0 auto;}
+.container{ width: 1170px; margin: 0 auto;}
 
 body {
-  min-width: 1200px;
+  min-width: 1240px;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;}
 
@@ -68,13 +63,14 @@ padding: 7px;
 margin-left: 8px;
 color: #fff;
 border: 1px solid #2c2c2c;
+outline: none;
 }
 .logo, .top-link {
   display: inline-block;
   vertical-align: middle;
 }
 
-.top-link:hover{border: 1px solid #fff;}
+.top-link:active{border: 1px solid #fff;}
 
 /*Промо блок*/
 
@@ -307,15 +303,12 @@ left: 16px;
 
 #defaultCountdown { width: 240px; height: 45px; }
 /*Из файла CSS*/
-    .is-countdown {
-      border: 1px solid #ccc;
-      background-color: #eee;
-    }
+  
     .countdown-rtl {
       direction: rtl;
     }
     .countdown-holding span {
-      color: ЛИ#888;
+      color: #26668e;
     }
     .countdown-row {
       clear: both;
@@ -403,12 +396,10 @@ border: 1px solid #d5d5d5;
 border-radius: 5px;
 font-size: 18px;
 color: #444;
-position: absolute;
-right: 0;
--webkit-box-sizing: content-box;
--moz-box-sizing: content-box;
-box-sizing: content-box;
+float: right;
 }
+
+
 .form-item:hover, .submit:hover {
   border: 2px solid #aed6ff;
   border-radius: 5px;
@@ -707,17 +698,3 @@ position: absolute;
 }
 .smi:hover {color: #6d7479;}
 /*Подвал*/
-
-.foot-nav {
-  position: relative;
-}
-.foot-nav:before {
-  content: '';
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  display: block;
-  background: url(../img/icons.png) -271px 0 no-repeat;
-  right: -300px;
-  top: -20px;
-}
