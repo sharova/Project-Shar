@@ -9,3 +9,10 @@ $(document).ready(function(){
       navText: [" " , " "],
       });
       });
+
+$(function () {
+    var austDay = new Date();                               // сегодняшняя дата
+    austDay = new Date(2015, 10 - 10, 18);    // дата, до которой считаем
+    // console.log(austDay);
+    $('#defaultCountdown').countdown({until: austDay, padZeroes: true});
+  });

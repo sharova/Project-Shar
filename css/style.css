@@ -101,9 +101,23 @@ border: 1px solid #2c2c2c;
 display: inline-block;
 font-size: 18px;
 color: #fff;
-padding: 7px;
+padding: 9px;
 border: 1px solid #fff;
 margin-top: 180px;
+position: relative;
+}
+
+.promo-more:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 34px;
+  background-image: url(../img/icons.png);
+  background-repeat: no-repeat;
+  background-position: -237px 0;
+  bottom: -60px;
+  left: 45px;
 }
 
 /*Преимущества*/
@@ -199,56 +213,165 @@ h2.text-center:before {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
-  position: relative;
   margin-top: 50px;
 }
-
+.flying_process {
+  height: 256px;
+  position: relative;
+}
+.flying_process:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(../img/path.png);
+  background-repeat: no-repeat;
+  height: 185px;
+  width: 1200px;
+  left: 0;
+  bottom: 0;
+}
 .flying-title {height: 120px;}
-.baloon {
+
+.baloon_img {
   background-image: url(../img/icons.png);
-  width: 44px;
+  width: 45px;
   height: 65px;
   background-repeat: no-repeat;
   position: absolute;
   display: inline-block; 
   background-position: 0 0;
-  margin: 30px auto;
+  bottom: 0;
+  left: 25px;
 }
+.baloon {
+  position: relative;
+  height: 100px;
+  width: 100px;
+}
+
 .bal-text {
   color: #454545;
   font-size: 18px;
-  position: absolute;
-  display: inline-block;
-  width: 20px;
+  display: block;
+  top: 0;
+  text-align: center;
 }
-.b1, .bt1, .b5, .bt5 {top: 200px; }
-.b2, .bt4, .b4 {top: 100px; }
-.b3, .bt3 {top: -50px;}
-.bt2 {top: 80px;}
 
-.b1:before, .b2:before, .b3:before, .b4:before, .b5:before {
+.baloon1 {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+}
+.baloon2 {
+  position: absolute;
+  bottom: 30%;
+  left: 23%;
+  height: 120px;
+}
+.baloon3 {
+  position: absolute;
+  top: -20%;
+  left: 46%;
+}
+.baloon4 {
+  position: absolute;
+  bottom: 32%;
+  left: 70%;
+}
+.baloon5 {
+  position: absolute;
+  bottom: 17%;
+  right: 0;
+}
+.baloon2>.bal-img{height: 30px;}
+.baloon_img:before {
  position: absolute;
  color: #fff;
 font-size: 20px;
 top: 10px;
-left: 15px;
+left: 16px;
 }
-.b1:before { content: '1';}
-.b2:before { content: '2';}
-.b3:before { content: '3';}
-.b4:before { content: '4';}
-.b5:before { content: '5';}
+.baloon1>.baloon_img:before { content: '1';}
+.baloon2>.baloon_img:before { content: '2';}
+.baloon3>.baloon_img:before { content: '3';}
+.baloon4>.baloon_img:before { content: '4';}
+.baloon5>.baloon_img:before { content: '5';}
 
 
 /*Таймер*/
+
+.timer {
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+#defaultCountdown { width: 240px; height: 45px; }
+/*Из файла CSS*/
+    .is-countdown {
+      border: 1px solid #ccc;
+      background-color: #eee;
+    }
+    .countdown-rtl {
+      direction: rtl;
+    }
+    .countdown-holding span {
+      color: ЛИ#888;
+    }
+    .countdown-row {
+      clear: both;
+      width: 100%;
+      padding: 0px 2px;
+      text-align: center;
+    }
+    .countdown-show1 .countdown-section {
+      width: 98%;
+    }
+    .countdown-show2 .countdown-section {
+      width: 48%;
+    }
+    .countdown-show3 .countdown-section {
+      width: 32.5%;
+    }
+    .countdown-show4 .countdown-section {
+      width: 24.5%;
+    }
+    .countdown-show5 .countdown-section {
+      width: 19.5%;
+    }
+    .countdown-show6 .countdown-section {
+      width: 16.25%;
+    }
+    .countdown-show7 .countdown-section {
+      width: 14%;
+    }
+    .countdown-section {
+      display: block;
+      float: left;
+      font-size: 75%;
+      text-align: center;
+    }
+    .countdown-amount {
+      font-size: 200%;
+    }
+    .countdown-period {
+        display: block;
+    }
+    .countdown-descr {
+      display: block;
+      width: 100%;
+    }
+/*Конец из файла CSS*/
+
 /*Рассчитать стоимость*/
 
-.text-g {
+.priceblock {height: 385px; padding-top: 20px;}
+
+.text-g, .text-form {
   font-size: 17px;
   color: #444;
   line-height: 22px;
-  margin-bottom: 24px;
 }
+.text-g { margin-bottom: 24px;}
 .no-marg {
   margin: 0;
 }
@@ -259,30 +382,82 @@ h3 {
   color: #444;
   margin-bottom: 35px;
 }
+
+
 /*Форма*/
+
 form {
   position: relative;
   margin-left: 8.33%;
+  position: relative;
 }
-
+.form-row {
+  height: 40px;
+  margin: 10px;
+  line-height: 40px;
+}
 .form-item{
 height: 40px;
-width: 350px;
+width: 400px;
 border: 1px solid #d5d5d5;
 border-radius: 5px;
-position: absolute;
-right: 100px;
-margin-bottom: 10px;
 font-size: 18px;
-line-height: 26px;
 color: #444;
+position: absolute;
+right: 0;
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
 }
-.form-item:hover {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
+.form-item:hover, .submit:hover {
   border: 2px solid #aed6ff;
   border-radius: 5px;
+}
+.black-price {
+color: #444;
+font-size: 18px;
+line-height: 50px;
+}
+
+.form-row:last-child {
+  height: 50px;
+  width: 400px;
+  margin-top: 45px;
+}
+.form-item:nth-child(3) {padding-left: 20px;}
+
+.form-item:nth-child(3), .form-item:nth-child(4) {position: relative;}
+/*.name-icon{*/
+ content: '';
+ position: absolute;
+ display: block;
+ background: url(../img/icons.png) -185px -70px no-repeat;
+ width: 17px;
+ height: 17px;
+ left: 0;
+}
+.form-item:nth-child(4):before {
+
+}
+.pink-price {
+  color: #f97e7e;
+  font-size: 38px;
+  margin-left: 15px;
+}
+.submit {
+  background-color: #46b0dc;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  font-size: 18px;
+  border-radius: 5px;
+  height: 40px;
+  color: #fff;
+  border: none;
+}
+.form-row:last-child, .black-price, .pink-price, .submit {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /*Частые вопросы*/
@@ -316,7 +491,6 @@ margin-left: 8.33%;}
   background-position: -125px 0;
   left: 0px;
 }
-
 
 
 /*Факты*/
@@ -532,4 +706,18 @@ position: absolute;
   color: #444;
 }
 .smi:hover {color: #6d7479;}
-/*Подвал
+/*Подвал*/
+
+.foot-nav {
+  position: relative;
+}
+.foot-nav:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: url(../img/icons.png) -271px 0 no-repeat;
+  right: -300px;
+  top: -20px;
+}
