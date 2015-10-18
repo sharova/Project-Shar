@@ -387,6 +387,7 @@ form {
   margin-left: 8.33%;
   position: relative;
 }
+
 .form-row {
   height: 40px;
   margin: 10px 0;
@@ -394,17 +395,56 @@ form {
 }
 .form-item{
 height: 36px;
-width: 398px;
-border: 1px solid #d5d5d5;
-border-radius: 5px;
-font-size: 18px;
-color: #444;
+width: 378px;
 float: right;
+display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: fff;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #444;
+  padding: 0 10px;
+  outline: none;}
+
+.form-item, input[type=text] {
+  padding-left: 40px;
 }
 
-.select2-container {float: right; }
+.person, .number {
+position: relative;
+}
+.person:before {
+ content: '';
+ position: absolute;
+ display: block;
+ background: url(../img/icons.png) -185px -70px no-repeat;
+ width: 17px;
+ height: 17px;
+ left: 62px;
+ top: 0;
+}
+.number:before {
+ content: '';
+ position: absolute;
+ display: block;
+ background: url(../img/icons.png) -185px -86px no-repeat;
+ width: 17px;
+ height: 17px;
+ left: 120px;
+ top: 0; 
+}
 
-.form-item:hover, .submit:hover {
+.select2-container {
+  float: right; 
+width: ;}
+
+.form-item:focus, .submit:focus {
   border: 2px solid #aed6ff;
   border-radius: 5px;
 }
@@ -439,17 +479,6 @@ line-height: 50px;
   display: inline-block;
   vertical-align: middle;
 }
-/*.name-icon{*/
- content: '';
- position: absolute;
- display: block;
- background: url(../img/icons.png) -185px -70px no-repeat;
- width: 17px;
- height: 17px;
- left: 0;
-
-
-
 
 
 /*Частые вопросы*/
@@ -589,6 +618,23 @@ border-radius: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.top-button {
+  width: 100%;
+  position: relative;
+}
+.top-button:before {
+content: '';
+position: fixed;
+background: url(../img/icons.png) -270px 0 no-repeat;
+display: block;
+width: 30px;
+height: 30px;
+right: 2%;
+bottom: 2%;
+z-index: 1;
+}
+
+
 .cont-title {
   font-size: 26px;
   color: #353535;
@@ -698,4 +744,7 @@ position: absolute;
   color: #444;
 }
 .smi:hover {color: #6d7479;}
+
+
+
 /*Подвал*/
