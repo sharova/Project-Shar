@@ -148,7 +148,7 @@ padding: 30px;
   top: -10px;
 }
 .adv-pic4:before {background-position: 0 -110px;}
-.adv-pic1:before {background-position: -73px -110px;}
+.adv-pic1:before {background-position: -74px -110px;}
 .adv-pic3:before {background-position: -225px -110px;}
 .adv-pic2:before {background-position: -150px -110px;}
 
@@ -168,7 +168,7 @@ h2:before {
   height: 6px;
   background-color: #3e98d7;
   left: 0;
-  bottom: -15px;
+  bottom: -20px;
 }
 h2.text-center:before {
   content: '';
@@ -177,13 +177,13 @@ h2.text-center:before {
   height: 6px;
   background-color: #3e98d7;
   left: 48%;
-  bottom: -15px;}
+  bottom: -20px;}
 
  .texts {
   color: #444;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 24px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 }
 
 .video {
@@ -197,6 +197,10 @@ h2.text-center:before {
 }
 
 /*Галерея*/
+.gallery {
+  height: 460px;
+  padding-top: 70px;
+}
 .slide {
   width: 245px;
 }
@@ -363,7 +367,7 @@ left: 16px;
 .priceblock {height: 385px; padding-top: 20px;}
 
 .text-g, .text-form {
-  font-size: 17px;
+  font-size: 18px;
   color: #444;
   line-height: 22px;
 }
@@ -393,11 +397,11 @@ form {
   margin: 10px 0;
   line-height: 40px;
 }
-.form-item{
-height: 36px;
-width: 378px;
-float: right;
-display: block;
+  .form-item{
+  height: 36px;
+  width: 378px;
+  float: right;
+  display: block;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -410,10 +414,13 @@ display: block;
   font-size: 18px;
   color: #444;
   padding: 0 10px;
-  outline: none;}
+  outline: none;
+}
 
 .form-item, input[type=text] {
   padding-left: 40px;
+  font-size: 18px;
+  color: #444;
 }
 
 .person, .number {
@@ -489,7 +496,7 @@ line-height: 50px;
 }
 
 h4 {
-  font-size: 17px;
+  font-size: 18px;
   color: #444;
   font-weight: bold;
   line-height: 24px;
@@ -574,6 +581,8 @@ margin-left: 8.33%;}
   border-radius: 50%;
   display: block;
   margin: 0 auto;
+  -webkit-transition: 0.5s ease-out background;
+  -moz-transition: 0.5s ease-out background;
   transition: 0.5s ease-out background;
   background-repeat: no-repeat;
 }
@@ -611,6 +620,17 @@ border-radius: 50%;
      }
 
 /*Контакты*/
+
+.top-button {
+position: fixed;
+background: url(../img/icons.png) -270px 0 no-repeat;
+width: 30px;
+height: 30px;
+right: 2%;
+bottom: 2%;
+}
+
+
 .contacts {
   background-image: url(../img/contacts.jpg);
   height: 400px;
@@ -618,21 +638,7 @@ border-radius: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.top-button {
-  width: 100%;
-  position: relative;
-}
-.top-button:before {
-content: '';
-position: fixed;
-background: url(../img/icons.png) -270px 0 no-repeat;
-display: block;
-width: 30px;
-height: 30px;
-right: 2%;
-bottom: 2%;
-z-index: 1;
-}
+
 
 
 .cont-title {

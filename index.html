@@ -75,7 +75,7 @@
         <div class="column3">
           <p class="adv-text adv-pic4">Потрясающие виды</p>
        </div>
-    <a name="more"></a>
+    <a id="more"></a>
     </div>
   </div>
 </div>
@@ -105,7 +105,7 @@
 <div class="gallery">
   <div class="container">
    <div class="row">
-     <a name="photos"></a>
+     <a id="photos"></a>
       <div class="column12">  
         <h2 class="text-center">Галерея</h2>
 
@@ -128,7 +128,7 @@
 <!-- Как проходят полёты -->
 <div class="flying-title">
   <div class="container">
-  <a name="plan"></a>
+  <a id="plan"></a>
     <div class="column12"> 
      <h2 class="text-center">Как проходят полёты</h2>
     </div>
@@ -182,7 +182,7 @@
        <div class="countdown">
          <script>
          $('.countdown').countdown({
-          until: new Date(2015, 10-1, 21)
+          until: new Date(2015, 10-1, 23)
          });
 
          </script>
@@ -208,13 +208,13 @@
        </div>
       
       <!-- Форма -->
-        <a name="order"></a>
+        <a id="order"></a>
        <div class="column7">  
        <form>  
          
         <p class="form-row text-g">Маршрут полёта: 
     
-        <select name="" class="form-item" >
+        <select name="sel_route" class="form-item" >
               
             <option>Сестрорецк-Парнас</option>
             <option>Изумрудый город</option>
@@ -225,7 +225,7 @@
         </select>
 
           <p class="form-row text-g">Количество человек: 
-          <select name="" class="form-item" id="">
+          <select name="sel_team" class="form-item">
                 <option>2 сапога пара</option>
                 <option>3 поросенка</option>
                 <option>Кто больше</option>
@@ -305,27 +305,27 @@
      <div class="row">
       
       <div class="column3">
-        <span class="round">
+        <div class="round">
         <p class="fact-c">700</p>
-        <p class="fact-d">Полетов в год</p></span>
+        <p class="fact-d">Полетов в год</p></div>
       </div>
       
       <div class="column3">
-        <span class="round">
+        <div class="round">
         <p class="fact-c">3000</p>
-        <p class="fact-d fact-d-down">Средняя дальность в метрах</p></span>
+        <p class="fact-d fact-d-down">Средняя дальность в метрах</p></div>
       </div>
       
       <div class="column3">
-        <span class="round">
+        <div class="round">
         <p class="fact-c">3</p>
-        <p class="fact-d">Воздушных шара</p></span>
+        <p class="fact-d">Воздушных шара</p></div>
       </div>
       
       <div class="column3">
-        <span class="round">
+        <div class="round">
         <p class="fact-c">12</p>
-        <p class="fact-d">Человек в команде</p></span>
+        <p class="fact-d">Человек в команде</p></div>
       </div>
     </div>
   </div>
@@ -334,7 +334,7 @@
 <!-- Команда инструкторов -->
 
 <div class="team">
-<a name="team"></a>
+<a id="team"></a>
   <div class="container">
      <div class="row">
       <h2 class="text-center"> Команда инструкторов</h2>
@@ -394,7 +394,8 @@
 
 <div class="contacts">
   <div class="container">
-     <a name="info"></a>
+ <a id="info"></a>
+    
      <a href="#" class="top-button"></a>
       <p class="cont-title text-center">Запишите адрес аэропорта</p>
       <p class="cont-info text-center">Всеволожск, улица Аэродромная 19а</p>
@@ -468,8 +469,9 @@ $('.select2-selection__rendered ').css('line-height','40px');
 $('.select2-container--default .select2-selection--single .select2-selection__arrow b').css('top', '67%');
 $('.select2-selection--single').css('outline','none');
 $('.select2-selection--single').css('height','40px');
-$('.form-item').css('outline','none');
 </script>
+
+
 
 </body>
 </html>
