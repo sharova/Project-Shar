@@ -36,7 +36,7 @@ ul.list-inline>li{display: inline-block;} .inline {display: inline}
 body {
   min-width: 1240px;
   margin: 0 auto;
-  font-family: 'Roboto', sans-serif;}
+  font-family: 'Roboto', sans-serif, 'Roboto Condensed', sans-serif;}
 
 a {text-decoration: none;}
 
@@ -621,7 +621,7 @@ border-radius: 50%;
 
 /*Контакты*/
 
-.top-button {
+#top-button {
 position: fixed;
 background: url(../img/icons.png) -270px 0 no-repeat;
 width: 30px;

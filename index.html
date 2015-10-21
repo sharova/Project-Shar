@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <script src="js/jquery.js"></script>
   <script src="js/jquery.plugin.js"></script>
   <script src="js/jquery.countdown.js"></script>
@@ -16,7 +17,7 @@
 
 <!-- Шапка сайта -->
   
-  <header>
+  <header id="header">
     
     <!-- Меню -->
 
@@ -395,8 +396,37 @@
 <div class="contacts">
   <div class="container">
  <a id="info"></a>
-    
-     <a href="#" class="top-button"></a>
+   
+   <!-- Scroll Top Button -->
+    <script>
+    $(function () {
+    var element = $("#top-button"), display;
+    $(window).scroll(function () {
+    display = $(this).scrollTop() >= 2500;
+    display != element.css('opacity') && element.stop().animate({ 'opacity': display }, 500);
+    $('#top-button').css('opacity', '0');
+    });
+    });
+    </script>
+ 
+    <script>
+      $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+      $('html,body').animate({
+      scrollTop: target.offset().top
+      }, 1000);
+      return false;
+      }
+      }
+      });
+      });
+    </script>
+
+     <a href="#header" id="top-button"></a>
       <p class="cont-title text-center">Запишите адрес аэропорта</p>
       <p class="cont-info text-center">Всеволожск, улица Аэродромная 19а</p>
       <div class="row">
@@ -453,10 +483,14 @@
   </div>
 </footer>
 
+<!-- Slider -->
 
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/script.js"></script>
+
+<!-- Form Select -->
+
 <link href="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
 <script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
 <script type="text/javascript">
@@ -470,7 +504,6 @@ $('.select2-container--default .select2-selection--single .select2-selection__ar
 $('.select2-selection--single').css('outline','none');
 $('.select2-selection--single').css('height','40px');
 </script>
-
 
 
 </body>
